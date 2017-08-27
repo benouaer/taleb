@@ -52,10 +52,10 @@ hr.star-primary:after {
 }
 
 hr.star-light {
-  border-color: white;
+  border-color: $theme-primary;
 }
 hr.star-light:after {
-  color: white;
+  color: $theme-primary;
   background-color: $theme-success;
 }
 
@@ -80,7 +80,7 @@ section {
 }
 
 section.success {
-  color: white;
+  color: #000000;
   background: $theme-success;
 }
 @media(max-width:767px) {

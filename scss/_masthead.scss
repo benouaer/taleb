@@ -5,8 +5,8 @@ header.masthead {
 
   text-align: center;
 
-  color: white;
-  background: $theme-success;
+  color: #060606;
+  //background: $theme-success;
   img {
     display: block;
 
@@ -17,10 +17,8 @@ header.masthead {
       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       font-size: 2em;
       font-weight: 700;
-
       display: block;
-
-      text-transform: uppercase;
+      text-transform: uppercase;      
     }
     .skills {
       font-size: 1.25em;
@@ -34,7 +32,7 @@ header.masthead {
     padding-bottom: 100px;
     .intro-text {
       .name {
-        font-size: 4.75em;
+        font-size: 2.75em;
       }
       .skills {
         font-size: 1.75em;

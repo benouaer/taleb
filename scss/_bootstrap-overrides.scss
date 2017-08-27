@@ -12,7 +12,7 @@
   &:hover {
     color: $theme-success;
     border: solid 2px white;
-    background: white;
+    background: $theme-success;
   }
 }
 
@@ -23,7 +23,7 @@
 
 .btn-success {
   font-weight: 700;
-  @include button-variant(white, $theme-success, $theme-success);
+  @include button-variant(white, $theme-primary, $theme-primary);
 }
 
 .btn-social {
