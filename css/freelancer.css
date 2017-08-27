@@ -18,7 +18,7 @@ a.active,
 a:active,
 a:focus,
 a:hover {
-  color: #F1EDED;
+  color: #E5E0E0;
   outline: none; }
 
 h1,
@@ -55,7 +55,7 @@ hr.star-light {
 
 hr.star-light:after {
   color: #AC2C1F;
-  background-color: #F1EDED; }
+  background-color: #E5E0E0; }
 
 hr.star-primary {
   border-color: #AC2C1F; }
@@ -75,7 +75,7 @@ section {
 
 section.success {
   color: #000000;
-  background: #F1EDED; }
+  background: #E5E0E0; }
 
 @media (max-width: 767px) {
   section {
@@ -118,7 +118,7 @@ section.success {
     #mainNav .navbar-nav li.nav-item a.nav-link {
       color: white; }
       #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-        color: #F1EDED;
+        color: #E5E0E0;
         outline: none; }
       #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
         color: white; }
@@ -130,8 +130,8 @@ section.success {
     border-color: white; }
     #mainNav .navbar-toggler:focus, #mainNav .navbar-toggler:hover {
       color: white;
-      border-color: #F1EDED;
-      background-color: #F1EDED; }
+      border-color: #E5E0E0;
+      background-color: #E5E0E0; }
 
 @media (min-width: 992px) {
   #mainNav {
@@ -148,10 +148,10 @@ section.success {
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
       color: white;
       border-radius: 3px;
-      background: #F1EDED; }
+      background: #E5E0E0; }
       #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
         color: white;
-        background: #F1EDED; }
+        background: #E5E0E0; }
   #mainNav.navbar-shrink {
     padding-top: 10px;
     padding-bottom: 10px; }
@@ -185,16 +185,16 @@ header.masthead {
     header.masthead .intro-text .skills {
       font-size: 1.75em; } }
 
-#portfolio .portfolio-item {
+#projects .portfolio-item {
   right: 0;
   margin: 0 0 15px; }
-  #portfolio .portfolio-item .portfolio-link {
+  #projects .portfolio-item .portfolio-link {
     position: relative;
     display: block;
     max-width: 400px;
     margin: 0 auto;
     cursor: pointer; }
-    #portfolio .portfolio-item .portfolio-link .caption {
+    #projects .portfolio-item .portfolio-link .caption {
       position: absolute;
       width: 100%;
       height: 100%;
@@ -202,10 +202,10 @@ header.masthead {
       -moz-transition: all ease 0.5s;
       transition: all ease 0.5s;
       opacity: 0;
-      background: rgba(241, 237, 237, 0.9); }
-      #portfolio .portfolio-item .portfolio-link .caption:hover {
+      background: rgba(229, 224, 224, 0.9); }
+      #projects .portfolio-item .portfolio-link .caption:hover {
         opacity: 1; }
-      #portfolio .portfolio-item .portfolio-link .caption .caption-content {
+      #projects .portfolio-item .portfolio-link .caption .caption-content {
         font-size: 20px;
         position: absolute;
         top: 50%;
@@ -214,17 +214,17 @@ header.masthead {
         margin-top: -12px;
         text-align: center;
         color: white; }
-        #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+        #projects .portfolio-item .portfolio-link .caption .caption-content i {
           margin-top: -12px; }
-        #portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
-        #portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+        #projects .portfolio-item .portfolio-link .caption .caption-content h3,
+        #projects .portfolio-item .portfolio-link .caption .caption-content h4 {
           margin: 0; }
 
-#portfolio * {
+#projects * {
   z-index: 2; }
 
 @media (min-width: 767px) {
-  #portfolio .portfolio-item {
+  #projects .portfolio-item {
     margin: 0 0 30px; } }
 
 .portfolio-modal .modal-dialog {
@@ -327,7 +327,7 @@ header.masthead {
   opacity: 1; }
 
 .floating-label-form-group-with-focus label {
-  color: #F1EDED; }
+  color: #E5E0E0; }
 
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee; }
@@ -353,9 +353,9 @@ footer {
   border: solid 2px white;
   background: transparent; }
   .btn-outline.active, .btn-outline:active, .btn-outline:focus, .btn-outline:hover {
-    color: #F1EDED;
+    color: #E5E0E0;
     border: solid 2px white;
-    background: #F1EDED; }
+    background: #E5E0E0; }
 
 .btn-primary {
   font-weight: 700;
