@@ -26,7 +26,7 @@ gulp.task('sass', function() {
     .pipe(header(banner, {
       pkg: pkg
     }))
-    .pipe(gulp.dest('assets/css'))
+    .pipe(gulp.dest('docscss'))
     .pipe(browserSync.reload({
       stream: true
     }))
@@ -34,14 +34,14 @@ gulp.task('sass', function() {
 
 // Minify compiled CSS
 gulp.task('minify-css', ['sass'], function() {
-  return gulp.src('assets/css/freelancer.css')
+  return gulp.src('docscss/freelancer.css')
     .pipe(cleanCSS({
       compatibility: 'ie8'
     }))
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('assets/css'))
+    .pipe(gulp.dest('docscss'))
     .pipe(browserSync.reload({
       stream: true
     }))
@@ -49,7 +49,7 @@ gulp.task('minify-css', ['sass'], function() {
 
 // Minify custom JS
 gulp.task('minify-js', function() {
-  return gulp.src('assets/js/freelancer.js')
+  return gulp.src('docsjs/freelancer.js')
     .pipe(uglify())
     .pipe(header(banner, {
       pkg: pkg
@@ -72,16 +72,16 @@ gulp.task('copy', function() {
       '!**/bootstrap-theme.*',
       '!**/*.map'
     ])
-    .pipe(gulp.dest('assets/vendor/bootstrap'))
+    .pipe(gulp.dest('docsvendor/bootstrap'))
 
   gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery/dist/jquery.min.js'])
-    .pipe(gulp.dest('assets/vendor/jquery'))
+    .pipe(gulp.dest('docsvendor/jquery'))
 
   gulp.src(['node_modules/popper.js/dist/umd/popper.js', 'node_modules/popper.js/dist/umd/popper.min.js'])
-    .pipe(gulp.dest('assets/vendor/popper'))
+    .pipe(gulp.dest('docsvendor/popper'))
 
   gulp.src(['node_modules/jquery.easing/*.js'])
-    .pipe(gulp.dest('assets/vendor/jquery-easing'))
+    .pipe(gulp.dest('docsvendor/jquery-easing'))
 
   gulp.src([
       'node_modules/font-awesome/**',
@@ -91,7 +91,7 @@ gulp.task('copy', function() {
       '!node_modules/font-awesome/*.md',
       '!node_modules/font-awesome/*.json'
     ])
-    .pipe(gulp.dest('assets/vendor/font-awesome'))
+    .pipe(gulp.dest('docsvendor/font-awesome'))
 })
 
 gulp.task('nunjucks', () =>
@@ -114,11 +114,11 @@ gulp.task('browserSync', function() {
 
 // Dev task with browserSync
 gulp.task('dev', ['browserSync', 'sass', 'minify-css', 'minify-js', 'nunjucks', 'copy'], function() {
-  gulp.watch('assets/scss/*.scss', ['sass']);
-  gulp.watch('assets/css/*.css', ['minify-css']);
-  gulp.watch('assets/js/*.js', ['minify-js']);
+  gulp.watch('docsscss/*.scss', ['sass']);
+  gulp.watch('docscss/*.css', ['minify-css']);
+  gulp.watch('docsjs/*.js', ['minify-js']);
   gulp.watch('templates/*.html', ['nunjucks']);
   // Reloads the browser whenever HTML or JS files change
-  gulp.watch('assets/*.html', browserSync.reload);
-  gulp.watch('assets/js/**/*.js', browserSync.reload);
+  gulp.watch('docs*.html', browserSync.reload);
+  gulp.watch('docsjs/**/*.js', browserSync.reload);
 });
