@@ -1,2 +1,6 @@
-node_modules
-img/portfolio/bkp
+node_modules/
+css/
+vendor/
+.idea/
+*.iml
+index.html
