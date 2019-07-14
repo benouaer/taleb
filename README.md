@@ -1,8 +1,6 @@
 # Professional website
 
-Professional website (online CV) based on the [Freelancer](http://startbootstrap.com/template-overviews/freelancer/) [Start Bootstrap](http://startbootstrap.com/) template. The theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, and a working PHP contact form.
-
-## Preview
+Professional website (online CV) based on the Start-Bootstrap template.
 https://benouaer.github.io/taleb
 
 ## Usage
